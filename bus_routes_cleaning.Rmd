@@ -1,0 +1,405 @@
+---
+title: "Final Project Cleaning"
+author: "Nicholas"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+# Load Packages
+
+
+```{r}
+library(dplyr)
+library(readr)
+library(ggplot2)
+library(tidyr)
+```
+
+# Load Data
+
+Routes
+```{r}
+route_169 <- read_csv("169_nodes.csv") %>%
+  relocate(ref, .after = osm_type ) %>%
+  relocate(name, .after = osm_type ) %>%
+  relocate(route_ref, .after = ref )
+
+route_169 <- route_169[,1:7]
+
+route_856 <- read_csv("856_nodes.csv") %>%
+  relocate(ref, .after = osm_type ) %>%
+  relocate(name, .after = osm_type ) %>%
+  relocate(route_ref, .after = ref )
+
+route_856 <- route_856[,1:7]
+
+route_981 <- read_csv("981_nodes.csv") %>%
+  relocate(ref, .after = osm_type ) %>%
+  relocate(name, .after = osm_type ) %>%
+  relocate(route_ref, .after = ref )
+
+route_981 <- route_981[,1:7]
+
+dorm_origin <- read_csv("origin_for_dorm.csv")
+
+str(dorm_origin)
+```
+
+# O-D Data Cleaning (Don't run)
+```{r eval = FALSE}
+july <- read_csv("oddata/202207.csv")
+aug <- read_csv("oddata/202208.csv")
+sep <- read_csv("oddata/202209.csv")
+
+str(july)
+
+# Function for calculating percentages
+
+july$july_key <- paste("(",july$ORIGIN_PT_CODE,",",july$DESTINATION_PT_CODE, ")")
+aug$aug_key <- paste("(",aug$ORIGIN_PT_CODE,",",aug$DESTINATION_PT_CODE, ")")
+sep$sep_key <- paste("(",sep$ORIGIN_PT_CODE,",",sep$DESTINATION_PT_CODE, ")")
+  
+#df$x <- paste
+
+#write.csv(july, 'july.csv')
+#write.csv(aug, 'aug.csv')
+#write.csv(sep, 'sep.csv')
+```
+
+
+# Load july,aug,sep datasets
+
+```{r}
+july <- read_csv("july.csv")
+aug <- read_csv("aug.csv")
+sep <- read_csv("sep.csv")
+
+july <- july %>%
+  rename(key = july_key)
+aug <- aug %>%
+  rename(key = aug_key)
+sep <- sep %>%
+  rename(key = sep_key)
+
+# Only weekend data
+july <- july %>%
+  filter(DAY_TYPE == 'WEEKENDS/HOLIDAY')
+
+aug <- aug %>%
+  filter(DAY_TYPE == 'WEEKENDS/HOLIDAY')
+
+sep <- sep %>%
+  filter(DAY_TYPE == 'WEEKENDS/HOLIDAY')
+
+
+
+# Sum trips, just by unique OD
+july_grouped <- july %>%
+  group_by(key, ORIGIN_PT_CODE, DESTINATION_PT_CODE) %>%
+  summarise(sum_trips = sum(TOTAL_TRIPS)) %>% 
+  rename(sum_trips_july = sum_trips)
+
+aug_grouped <- aug %>%
+  group_by(key, ORIGIN_PT_CODE, DESTINATION_PT_CODE) %>%
+  summarise(sum_trips = sum(TOTAL_TRIPS)) %>%
+  rename(sum_trips_aug = sum_trips)
+
+sep_grouped <- sep %>%
+  group_by(key, ORIGIN_PT_CODE, DESTINATION_PT_CODE) %>%
+  summarise(sum_trips = sum(TOTAL_TRIPS)) %>%
+  rename(sum_trips_sep = sum_trips)
+
+all_grouped <- july_grouped %>%
+  left_join(aug_grouped) %>%
+  left_join(sep_grouped) 
+
+all_grouped[is.na(all_grouped)] <- 0 
+
+all_grouped <- all_grouped %>%
+  mutate(avg_sum_trip = round(1/3 * (sum_trips_july + sum_trips_aug + sum_trips_sep), digits =0 ))
+
+# Dorm Travel Data
+
+dorm_travel_data <- all_grouped %>%
+  filter(ORIGIN_PT_CODE %in% dorm_origin$origin)
+
+dorm_travel_data <- dorm_travel_data %>%
+  left_join(dorm_origin, by =c('ORIGIN_PT_CODE'='origin')) %>%
+  relocate(dorm_index, .before = ORIGIN_PT_CODE)
+```
+
+#yale nus
+```{r}
+ync_clementi <- sep %>%
+  filter(ORIGIN_PT_CODE == 17091,
+         DESTINATION_PT_CODE == 17171) %>% 
+  group_by(TIME_PER_HOUR, TOTAL_TRIPS) %>%
+  summarise(total = sum()) %>%
+  group_by(TIME_PER_HOUR) %>%
+  summarise(total = sum(TOTAL_TRIPS))
+
+
+ggplot(ync_clementi, aes(x = TIME_PER_HOUR, y = total)) +
+  geom_col(fill = "lightblue", colour = "black") +
+  labs(x = "Hour of the day",
+          y = "Total Trips",
+          title = "Number of trips made from Aft Clementi Ave 1 to Clementi MRT")
+```
+
+
+# Match Route with Dorm Origin
+```{r}
+# Figure out if bus stop is on one of the three routes 
+
+dorm_origin <- dorm_origin %>%
+  mutate(is_169 = origin %in% route_169$ref) %>%
+  mutate(is_856 = origin %in% route_856$ref) %>%
+  mutate(is_981 = origin %in% route_981$ref) 
+
+#write.csv(dorm_origin,"dorm_origin.csv", row.names = FALSE)
+
+
+
+dorm_route_fun <- function(dorm_no, route_no){
+  df <- dorm_travel_data %>%
+    filter(dorm_index == dorm_no)
+  if (route_no == 169) {
+    df %>% filter(DESTINATION_PT_CODE %in% route_169$ref == TRUE)
+  }
+  else if (route_no == 856) {
+    df %>% filter(DESTINATION_PT_CODE %in% route_856$ref == TRUE)
+  }
+  else if (route_no == 981) {
+    df %>% filter(DESTINATION_PT_CODE %in% route_856$ref == TRUE)
+  }
+}
+
+#Dorm 1, Route 856
+d1_856 <- dorm_route_fun(1,856)
+
+#Dorm 2, Route 169
+d2_169 <- dorm_travel_data %>%
+  filter(dorm_index == 2) %>%
+  filter(DESTINATION_PT_CODE %in% route_169$ref == TRUE)
+
+#Dorm 3, Route 981
+d3_981 <- dorm_route_fun(3,981)
+
+#Dorm 4, Route 169
+d4_169 <- dorm_route_fun(4,169)
+
+#Dorm 4, Route 856
+d4_856 <- dorm_route_fun(4,856)
+
+#Dorm 5, Route 169
+d5_169 <- dorm_route_fun(5,169)
+
+#Dorm 8, Route 169
+d8_169 <- dorm_route_fun(8,169)
+#Dorm 8, Route 856
+d8_856 <- dorm_route_fun(8,856)
+#Dorm 8, Route 981
+d8_981 <- dorm_route_fun(8,981)
+
+#Dorm 9, Route 169
+d9_169 <- dorm_route_fun(9,169)
+#Dorm 9, Route 856
+d9_856 <- dorm_route_fun(9,856)
+#Dorm 9, Route 981
+d9_981 <- dorm_route_fun(9,981)
+
+#Dorm 10, Route 169
+d10_169 <- dorm_route_fun(10,169)
+
+unique_dorms = c(2,4,5,8,9,10,1,4,8,9,3,8,9)
+
+sort(unique(unique_dorms))
+```
+```{r}
+d2_169[,c("DESTINATION_PT_CODE","avg_sum_trip")]
+#z[, c("a", "b")]
+```
+# All dorm info in one route df
+
+```{r}
+# Route 169
+route_169_dorms <- route_169 %>%
+  # d2
+  left_join(d2_169[,c("DESTINATION_PT_CODE","avg_sum_trip")], by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+  mutate_if(is.numeric, ~replace_na(., 0)) %>%
+  rename(d2 = avg_sum_trip) %>%
+  # d4 
+  left_join(d4_169[,c("DESTINATION_PT_CODE","avg_sum_trip")], by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+  mutate_if(is.numeric, ~replace_na(., 0)) %>%
+  rename(d4 = avg_sum_trip) %>%
+  #d5
+  left_join(d5_169[,c("DESTINATION_PT_CODE","avg_sum_trip")], by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+  mutate_if(is.numeric, ~replace_na(., 0)) %>%
+  rename(d5 = avg_sum_trip) %>%
+  #d8 
+  left_join(d8_169[,c("DESTINATION_PT_CODE","avg_sum_trip")], by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+  mutate_if(is.numeric, ~replace_na(., 0)) %>%
+  rename(d8 = avg_sum_trip) %>%
+  #d9 
+  left_join(d9_169[,c("DESTINATION_PT_CODE","avg_sum_trip")], by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+  mutate_if(is.numeric, ~replace_na(., 0)) %>%
+  rename(d9 = avg_sum_trip) %>%
+  #d10
+  left_join(d10_169[,c("DESTINATION_PT_CODE","avg_sum_trip")], by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+  mutate_if(is.numeric, ~replace_na(., 0)) %>%
+  rename(d10 = avg_sum_trip) %>%
+  #Average
+  mutate(avg = round((d2+d4+d5+d8+d9+d10)/6, digits =0))
+
+#write.csv(route_169_dorms,"route_169_dorms.csv", row.names = FALSE)
+
+#Route 856
+route_856_dorms <- route_856 %>%
+  # d1
+  left_join(d1_856[,c("DESTINATION_PT_CODE","avg_sum_trip")], by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+  mutate_if(is.numeric, ~replace_na(., 0)) %>%
+  rename(d1 = avg_sum_trip) %>%
+  #d4
+  left_join(d4_856[,c("DESTINATION_PT_CODE","avg_sum_trip")], by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+  mutate_if(is.numeric, ~replace_na(., 0)) %>%
+  rename(d4 = avg_sum_trip) %>%
+  #d8
+  left_join(d8_856[,c("DESTINATION_PT_CODE","avg_sum_trip")], by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+  mutate_if(is.numeric, ~replace_na(., 0)) %>%
+  rename(d8 = avg_sum_trip) %>%
+  #d9
+  left_join(d9_856[,c("DESTINATION_PT_CODE","avg_sum_trip")], by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+  mutate_if(is.numeric, ~replace_na(., 0)) %>%
+  rename(d9 = avg_sum_trip) %>%
+  # Average 
+  mutate(avg = round((d1+d4+d8+d9)/4, digits =0))
+
+#write.csv(route_856_dorms,"route_856_dorms.csv", row.names = FALSE)
+
+route_981_dorms <- route_981 %>%
+  # d3
+  left_join(d3_981[,c("DESTINATION_PT_CODE","avg_sum_trip")], by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+  mutate_if(is.numeric, ~replace_na(., 0)) %>%
+  rename(d3 = avg_sum_trip) %>%
+  #d8 
+  left_join(d8_981[,c("DESTINATION_PT_CODE","avg_sum_trip")], by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+  mutate_if(is.numeric, ~replace_na(., 0)) %>%
+  rename(d8 = avg_sum_trip) %>%
+  #d9
+  left_join(d9_981[,c("DESTINATION_PT_CODE","avg_sum_trip")], by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+  mutate_if(is.numeric, ~replace_na(., 0)) %>%
+  rename(d9 = avg_sum_trip) %>%
+  # Average
+  mutate(avg = round((d3+d8+d9)/3, digits =0))
+#write.csv(route_981_dorms,"route_981_dorms.csv", row.names = FALSE)
+```
+
+```{r}
+#"csv_d1"=0  AND  "csv_d4"  =0 AND  "csv_d8" = 0 AND  "csv_d9" =0 
+```
+
+
+# Left Join dorm/routes with nodes
+```{r}
+merge_route <- function(dorm_route_df, route_no){
+  if (route_no == 169) {
+    route_169 %>% 
+      left_join(dorm_route_df, by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+      mutate_if(is.numeric, ~replace_na(., 0))
+  }
+  else if (route_no == 856) {
+    route_856 %>% 
+      left_join(dorm_route_df, by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+      mutate_if(is.numeric, ~replace_na(., 0))
+  }
+  else if (route_no == 981) {
+    route_981 %>% 
+      left_join(dorm_route_df, by =c('ref' = 'DESTINATION_PT_CODE')) %>% 
+      mutate_if(is.numeric, ~replace_na(., 0))
+  }
+}
+
+d1_856 <- merge_route(d1_856, 856)
+
+d2_169 <- merge_route(d2_169, 169)
+
+d3_981 <- merge_route(d3_981, 981)
+
+d4_169 <- merge_route(d4_169, 169)
+d4_856 <- merge_route(d4_856, 856)
+
+d5_169 <- merge_route(d5_169, 169)
+
+d8_169 <- merge_route(d8_169, 169)
+d8_856 <- merge_route(d8_856, 856)
+d8_981 <- merge_route(d8_981, 981)
+
+d9_169 <- merge_route(d9_169, 169)
+d9_856 <- merge_route(d9_856, 856)
+d9_981 <- merge_route(d9_981, 981)
+
+
+#Dorm 3, Route 981
+d3_981 <- dorm_route_fun(3,981)
+
+#Dorm 4, Route 169
+d4_169 <- dorm_route_fun(4,169)
+
+#Dorm 4, Route 856
+d4_856 <- dorm_route_fun(4,856)
+
+#Dorm 5, Route 169
+d5_169 <- dorm_route_fun(5,169)
+
+#Dorm 8, Route 169
+d8_169 <- dorm_route_fun(8,169)
+#Dorm 8, Route 856
+d8_856 <- dorm_route_fun(8,856)
+#Dorm 8, Route 981
+d8_981 <- dorm_route_fun(8,981)
+
+#Dorm 9, Route 169
+d9_169 <- dorm_route_fun(9,169)
+#Dorm 9, Route 856
+d9_856 <- dorm_route_fun(9,856)
+#Dorm 9, Route 981
+d9_981 <- dorm_route_fun(9,981)
+
+```
+
+
+
+
+# Write CSVs
+```{r}
+# CSV for cleaned travel time
+#write.csv(d1_856,"d1_856.csv", row.names = FALSE)
+
+#write.csv(d2_169,"d2_169.csv", row.names = FALSE)
+
+#write.csv(d3_981,"d3_981.csv", row.names = FALSE)
+
+#write.csv(d4_169,"d4_169.csv", row.names = FALSE)
+#write.csv(d4_856,"d4_856.csv", row.names = FALSE)
+
+#write.csv(d5_169,"d5_169.csv", row.names = FALSE)
+
+#write.csv(d8_169,"d8_169.csv", row.names = FALSE)
+#write.csv(d8_856,"d8_856.csv", row.names = FALSE)
+#write.csv(d8_981,"d8_981.csv", row.names = FALSE)
+
+#write.csv(d9_169,"d9_169.csv", row.names = FALSE)
+#write.csv(d9_856,"d9_856.csv", row.names = FALSE)
+#write.csv(d9_981,"d9_981.csv", row.names = FALSE)
+# CSV for cleaned travel_mode 
+#write.csv(cleaned_travel_mode,"cleaned_transport_mode.csv", row.names = FALSE)
+
+```
+
