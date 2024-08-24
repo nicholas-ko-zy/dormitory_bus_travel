@@ -1,0 +1,33 @@
+fid,full_id,osm_id,osm_type,ref,traffic_signals,operator,amenity,name:en,route_ref,public_transport,name,location,bus,highway
+"1",n410458929,"410458929",node,"47809",,,,,"169;856;981",platform,Opposite Sunshine Bakery,Admiralty Road West,yes,bus_stop
+"2",n410458957,"410458957",node,"58141",,,,Sembawang camp,"169;169A;856;981",platform,Sembawang Camp,Admiralty Road West,yes,bus_stop
+"3",n410459054,"410459054",node,"47801",,,,,"169;169A;856;981",platform,Sunshine Bakery,Admiralty Road West,yes,bus_stop
+"4",n410459204,"410459204",node,"58169",,,,,"169;856;981",platform,After HomeTeamNS Sembawang Resort,Admiralty Road West,yes,bus_stop
+"5",n410459205,"410459205",node,"58161",,,,,"169;169A;856;981",platform,Before Sembawang Shipyard G 3,Admiralty Road West,yes,bus_stop
+"6",n410459206,"410459206",node,"58149",,,,,"169;856;981",platform,Opposite Sembawang Shipyard G 8,Admiralty Road West,yes,bus_stop
+"7",n410462709,"410462709",node,"58129",,,,,"656;856;859;859B;981",platform,Blk 508 Carpark,Canberra Road,yes,bus_stop
+"8",n410462710,"410462710",node,"58111",,,,,"856;859;859A;859T;882;882A;980;981;NR2",platform,Blk 351 Carpark,Canberra Road,yes,bus_stop
+"9",n410462711,"410462711",node,"58139",,,,,"856;981",platform,Before Assyafaah Mosque,Canberra Road,yes,bus_stop
+"10",n410462715,"410462715",node,"58131",,,,,"856;981",platform,After Assyafaah Mosque,Canberra Road,yes,bus_stop
+"11",n410462721,"410462721",node,"58119",,,,,"856;859;859B;882;980;981",platform,Blk 502A,Canberra Road,yes,bus_stop
+"12",n410462723,"410462723",node,"58121",,,,,"656;856;859;859A;859T;981",platform,Blk 424A Carpark,Canberra Road,yes,bus_stop
+"13",n410473862,"410473862",node,"58009",,Land Transport Authority,bus_station,,"117;117M;167;859;859A;859B;859T;882;882A;883;883M;980;981",platform,Sembawang Interchange,Sembawang Vista,yes,bus_stop
+"14",n410475044,"410475044",node,"47111",,,,,"856;981",platform,Before Senoko Way,Senoko Avenue,yes,bus_stop
+"15",n410475069,"410475069",node,"47119",,,,,"856;981",platform,After Senoko Way,Senoko Avenue,yes,bus_stop
+"16",n410475078,"410475078",node,"47169",,Land Transport Authority,,,"981",platform,Chuan Lim Construction,Senoko Drive,yes,bus_stop
+"17",n410475081,"410475081",node,"47109",,,,,"856;981",platform,Maxsteel Enterprise,Senoko Drive,yes,bus_stop
+"18",n410475082,"410475082",node,"47101",,,,,"856;981",platform,After Senoko Avenue,Senoko Drive,yes,bus_stop
+"19",n410475083,"410475083",node,"47091",,Land Transport Authority,,,"856;981",platform,Before Senoko Cresent,Senoko Drive,yes,bus_stop
+"20",n410475086,"410475086",node,"47179",,,,,"981",platform,Comfortdelgro Engineering,Senoko Loop,yes,bus_stop
+"21",n410475087,"410475087",node,"47189",,,,,"981",platform,K.U.S. Holdings,Senoko Loop,yes,bus_stop
+"22",n410475088,"410475088",node,"47199",,,,,"981",platform,Before Senoko Drive,Senoko Loop,yes,bus_stop
+"23",n410475089,"410475089",node,"47131",,,,,"981",platform,Fuji Oil Singapore,Senoko Road,yes,bus_stop
+"24",n410475092,"410475092",node,"47121",,,,,"981",platform,Opposite Lian Aik Siong Machinery,Senoko Road,yes,bus_stop
+"25",n410475093,"410475093",node,"47129",,,,,"981",platform,Lian Aik Siong Machinery,Senoko Road,yes,bus_stop
+"26",n410475095,"410475095",node,"47151",,,,,"981",platform,After Scania Singapore,Senoko Road,yes,bus_stop
+"27",n617035479,"617035479",node,"58259",,Land Transport Authority,,,"117;117M;656;859;859A;859T;882;882A;883;883M;962;962B;980;981",platform,Opposite Sun Plaza,Sembawang Drive,yes,bus_stop
+"28",n617035537,"617035537",node,"58251",,Land Transport Authority,,,"117;117M;656;859;859B;882;883;883M;962;962B;980;981;NR2",platform,Sun Plaza/Sembawang Station,Sembawang Drive,yes,bus_stop
+"29",n617600597,"617600597",node,"58211",,Land Transport Authority,,,"117;117M;858;859;859B;882;883;883M;981",platform,Sembawang Station,Sembawang Way,yes,bus_stop
+"30",n617600600,"617600600",node,"58219",,Land Transport Authority,,,"117;117M;858;858A;859;859A;859T;882;882A;883;883M;981",platform,Opposite Sembawang Station,Sembawang Way,yes,bus_stop
+"31",n1867272087,"1867272087",node,"47099",,,,,"856;981",platform,Masterdon,Senoko Drive,yes,bus_stop
+"32",n1867272104,"1867272104",node,"47141",,,,,"981",platform,Before Sc Auto,Senoko Road,yes,bus_stop

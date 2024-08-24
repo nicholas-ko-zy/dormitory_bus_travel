@@ -1,0 +1,72 @@
+fid,full_id,osm_id,osm_type,ref,addr:country,addr:city,wikipedia,wikidata,tactile_paving,network:wikidata,network:short,network,lit,amenity,air_conditioning,button_operated,maxspeed,short_name,wheelchair,operator,name:en,bin,shelter,bench,route_ref,public_transport,name,location,bus,traffic_signals,crossing,highway
+"1",n410458900,"410458900",node,"46139",,,,,,,,,,,,,,,,,,,,,"856",platform,After Riverside Road,Admiralty Road,yes,,,bus_stop
+"2",n410458901,"410458901",node,"46119",,,,,,,,,,,,,,,,,,,yes,yes,"178;178A;856;903",platform,Marsiling Community Club,Admiralty Road,yes,,,bus_stop
+"3",n410458909,"410458909",node,"46121",,,,,,,,,,,,,,,,,,,yes,yes,"856",platform,Opposite Marsiling Lane Market/Food Centre,Admiralty Road,yes,,,bus_stop
+"4",n410458915,"410458915",node,"47019",,,,,,,,,,,,,,,,,,,,,"856",platform,After Woodlands Waterfront Park,Admiralty Road,yes,,,bus_stop
+"5",n410458916,"410458916",node,"46129",,,,,,,,,,,,,,,,,,yes,yes,yes,"856",platform,Marsiling Lane Market/Food Centre,Admiralty Road,yes,,,bus_stop
+"6",n410458917,"410458917",node,"46111",,,,,,,,,,,,,,,,,,,,,"178;856;903;NR2",platform,Blk 23,Admiralty Road,yes,,,bus_stop
+"7",n410458919,"410458919",node,"47011",,,,,,,,,,,,,,,,,,,,,"856",platform,Before Woodlands Waterfront Park,Admiralty Road,yes,,,bus_stop
+"8",n410458922,"410458922",node,"46131",,,,,,,,,,,,,,,,,,,,,"856",platform,After Marsiling Lane,Admiralty Road,yes,,,bus_stop
+"9",n410458929,"410458929",node,"47809",,,,,,,,,,,,,,,,,,,,,"169;856;981",platform,Opposite Sunshine Bakery,Admiralty Road West,yes,,,bus_stop
+"10",n410458957,"410458957",node,"58141",,,,,,,,,,,,,,,,,Sembawang camp,,,,"169;169A;856;981",platform,Sembawang Camp,Admiralty Road West,yes,,,bus_stop
+"11",n410459004,"410459004",node,"47029",,,,,,,,,,,,,,,,,,,yes,yes,"856",platform,Opposite Khalsa Crescent Drug Rehabilitationb Centre,Admiralty Road West,yes,,,bus_stop
+"12",n410459022,"410459022",node,"47039",,,,,,,,,,,,,,,,,,yes,yes,yes,"856",platform,After View Road,Admiralty Road West,yes,,,bus_stop
+"13",n410459041,"410459041",node,"47059",,,,,,,,,,,,,,,,,,,,,"856",platform,Before Woodlands Industrial Park E4,Admiralty Road West,yes,,,bus_stop
+"14",n410459054,"410459054",node,"47801",,,,,,,,,,,,,,,,,,,,,"169;169A;856;981",platform,Sunshine Bakery,Admiralty Road West,yes,,,bus_stop
+"15",n410459068,"410459068",node,"47069",,,,,,,,,,,,,,,,,,,,,"856",platform,North Tech,Admiralty Road West,yes,,,bus_stop
+"16",n410459086,"410459086",node,"47079",,,,,,,,,,,,,,,,,,yes,yes,yes,"169;856",platform,Opposite British American Tobacco,Admiralty Road West,yes,,,bus_stop
+"17",n410459107,"410459107",node,"47051",,,,,,,,,,,,,,,,,,,,,"856",platform,After Woodlands Industrial Park E4,Admiralty Road West,yes,,,bus_stop
+"18",n410459123,"410459123",node,"47061",,,,,,,,,,,,,,,,,,,,,"856",platform,After Attap Valley Road,Admiralty Road West,yes,,,bus_stop
+"19",n410459130,"410459130",node,"47071",,,,,,,,,,,,,,,,,,yes,yes,yes,"169;169A;856",platform,Before British American Tobacco,Admiralty Road West,yes,,,bus_stop
+"20",n410459150,"410459150",node,"47021",,,,,,,,,,,,,,,,,,,,,"856",platform,Khalsa Crescent Drug Rehabilitationb Centre,Admiralty Road West,yes,,,bus_stop
+"21",n410459154,"410459154",node,"47031",,,,,,,,,,,,,,,,,,,,,"856",platform,Before Keramat Road,Admiralty Road West,yes,,,bus_stop
+"22",n410459170,"410459170",node,"47049",,,,,,,,,,,,,,,,,,,,,"856",platform,Woodlands Auto Hub,Admiralty Road West,yes,,,bus_stop
+"23",n410459204,"410459204",node,"58169",,,,,,,,,,,,,,,,,,,,,"169;856;981",platform,After HomeTeamNS Sembawang Resort,Admiralty Road West,yes,,,bus_stop
+"24",n410459205,"410459205",node,"58161",,,,,,,,,,,,,,,,,,,,,"169;169A;856;981",platform,Before Sembawang Shipyard G 3,Admiralty Road West,yes,,,bus_stop
+"25",n410459206,"410459206",node,"58149",,,,,,,,,,,,,,,,,,,,,"169;856;981",platform,Opposite Sembawang Shipyard G 8,Admiralty Road West,yes,,,bus_stop
+"26",n410462709,"410462709",node,"58129",,,,,,,,,,,,,,,,,,,,,"656;856;859;859B;981",platform,Blk 508 Carpark,Canberra Road,yes,,,bus_stop
+"27",n410462710,"410462710",node,"58111",,,,,,,,,,,,,,,,,,,,,"856;859;859A;859T;882;882A;980;981;NR2",platform,Blk 351 Carpark,Canberra Road,yes,,,bus_stop
+"28",n410462711,"410462711",node,"58139",,,,,,,,,,,,,,,,,,,,,"856;981",platform,Before Assyafaah Mosque,Canberra Road,yes,,,bus_stop
+"29",n410462712,"410462712",node,"58159",,,,,,,,,,,,,,,,,,,,,"167;856;858;858A;980",platform,After Admiral Hill,Canberra Road,yes,,,bus_stop
+"30",n410462714,"410462714",node,"58151",,,,,,,,,,,,,,,,,,,,,"167;856;858;980;NR2",platform,Before Sembawang Station,Canberra Road,yes,,,bus_stop
+"31",n410462715,"410462715",node,"58131",,,,,,,,,,,,,,,,,,,,,"856;981",platform,After Assyafaah Mosque,Canberra Road,yes,,,bus_stop
+"32",n410462716,"410462716",node,"58109",,,,,,,,,,,,,,,,,,,,,"856;858;858A;859;859T",platform,Opposite Blk 311,Canberra Road,yes,,,bus_stop
+"33",n410462721,"410462721",node,"58119",,,,,,,,,,,,,,,,,,,,,"856;859;859B;882;980;981",platform,Blk 502A,Canberra Road,yes,,,bus_stop
+"34",n410462722,"410462722",node,"58101",,,,,,,,,,,,,,,,,,,,,"856;858;859;NR2",platform,Blk 311,Canberra Road,yes,,,bus_stop
+"35",n410462723,"410462723",node,"58121",,,,,,,,,,,,,,,,,,,,,"656;856;859;859A;859T;981",platform,Blk 424A Carpark,Canberra Road,yes,,,bus_stop
+"36",n410473848,"410473848",node,"58011",,,,,,,,,,,,,,,,,,,,,"167;856;858;859;980",platform,Opposite Sembawang Shopping Centre,Sembawang Road,yes,,,bus_stop
+"37",n410473854,"410473854",node,"58019",,,,,,,,,,,,,,,,,,,,,"167;856;858;858A;859;859T;980",platform,After Sembawang Shopping Centre,Sembawang Road,yes,,,bus_stop
+"38",n410473857,"410473857",node,"57131",,,,,,,,,,,,,,,,,,,,,"167;856;858;859;980",platform,Opposite Jalan Kemuning,Sembawang Road,yes,,,bus_stop
+"39",n410473864,"410473864",node,"58021",,,,,,,,,,,,,,,,,,,,,"167;856;858;859;980",platform,Opposite The Nautical,Sembawang Road,yes,,,bus_stop
+"40",n410473872,"410473872",node,"57139",,,,,,,,,,,,,,,,,,,,,"167;856;858;858A;859;859T;980",platform,After Jalan Kemuning,Sembawang Road,yes,,,bus_stop
+"41",n410473904,"410473904",node,"57121",,,,,,,,,,,,,,,,,,,,,"167;856;858;859;969;980",platform,Opposite Blk 115B,Sembawang Road,yes,,,bus_stop
+"42",n410473905,"410473905",node,"57111",,,,,,,,,,,,,,,,,,,yes,,"167;856;858;859;969;980",platform,Opposite Blk 101,Sembawang Road,yes,,,bus_stop
+"43",n410473906,"410473906",node,"57129",,,,,,,,,,,,,,,,,,,yes,yes,"167;800;811;811A;811T;856;858;858A;859;859T;883M;969;980",platform,Blk 114,Sembawang Road,yes,,,bus_stop
+"44",n410473907,"410473907",node,"57119",,,,,,,,,,,,,,,,,,,yes,,"167;800;811;811A;811T;856;858;858A;859;859T;883M;969;980",platform,Blk 101,Sembawang Road,yes,,,bus_stop
+"45",n410475044,"410475044",node,"47111",,,,,,,,,,,,,,,,,,,,,"856;981",platform,Before Senoko Way,Senoko Avenue,yes,,,bus_stop
+"46",n410475069,"410475069",node,"47119",,,,,,,,,,,,,,,,,,,,,"856;981",platform,After Senoko Way,Senoko Avenue,yes,,,bus_stop
+"47",n410475081,"410475081",node,"47109",,,,,,,,,,,,,,,,,,,,,"856;981",platform,Maxsteel Enterprise,Senoko Drive,yes,,,bus_stop
+"48",n410475082,"410475082",node,"47101",,,,,,,,,,,,,,,,,,,,,"856;981",platform,After Senoko Avenue,Senoko Drive,yes,,,bus_stop
+"49",n410475083,"410475083",node,"47091",,,,,,,,,,,,,,,,Land Transport Authority,,,,,"856;981",platform,Before Senoko Cresent,Senoko Drive,yes,,,bus_stop
+"50",n410475090,"410475090",node,"47089",,,,,,,,,,,,,,,,,,,,,"856",platform,After Senoko Drive,Senoko Road,yes,,,bus_stop
+"51",n410475091,"410475091",node,"47081",,,,,,,,,,,,,,,,Land Transport Authority,,,,,"856",platform,After Senoko Cresent,Senoko Road,yes,,,bus_stop
+"52",n410484489,"410484489",node,"46541",,,,,,,,,,,,,,,,,,,,,"187;856;913M;925;925M;926;950;960;960e;961;961M;963;963R;963e;966",platform,Marsiling Mall,Woodlands Avenue 3,yes,,,bus_stop
+"53",n410484499,"410484499",node,"46549",,,,,,,,,,,,,,,,Land Transport Authority,,,,,"187;856;925;925A;925M;926;950;960;960e;961;961M;963;963R;963e;966;966A",platform,Blk 347,Woodlands Avenue 3,yes,,,bus_stop
+"54",n410484500,"410484500",node,"46529",,,,,,,,,,,,,,,yes,Land Transport Authority,,,,,"187;856;925;925A;925M;926;950;960;960e;961;961M;963;963R;963e;966;966A",platform,Opposite Marsiling Station,Woodlands Avenue 3,yes,,,bus_stop
+"55",n410484502,"410484502",node,"46531",,,,,,,,,,,,,,,,,,,,,"187;856;913M;925;925M;926;950;960;960e;961;961M;963;963R;963e;966",platform,Blk 173,Woodlands Avenue 3,yes,,,bus_stop
+"56",n410484503,"410484503",node,"46521",,,,,,,,,,,,,,,yes,Land Transport Authority,,,,,"187;856;913;913T;925;925M;926;950;960;960e;961;961M;963;963R;963e;966",platform,Marsiling Station,Woodlands Avenue 3,yes,,,bus_stop
+"57",n410484504,"410484504",node,"46539",,,,,,,,,,,,,,,,Land Transport Authority,,,,,"187;856;925;925A;925M;926;950;960;960e;961;961M;963;963R;963e;966;966A",platform,Blk 320,Woodlands Avenue 3,yes,,,bus_stop
+"58",n410485135,"410485135",node,"46511",,,,,,,,,,,,,,,,Land Transport Authority,,,,,"856;912;912B;913;913M;913T;950",platform,Marsiling Primary School,Woodlands Centre Road,yes,,,bus_stop
+"59",n410485136,"410485136",node,"46519",,,,,,,,,,,,,,,,Land Transport Authority,,,,,"160;178;856;912;912B;913M;950",platform,Opposite Blk 144,Woodlands Centre Road,yes,,,bus_stop
+"60",n410485145,"410485145",node,"46501",,,,,,,,,,,,,,,,,,,,,"856;911;912;912B;950",platform,Opposite Marsiling Park,Woodlands Centre Road,yes,,,bus_stop
+"61",n410485813,"410485813",node,"46069",,,,,,,,,,,,,,,,Land Transport Authority,,,,,"170;178;856;903;911;912;912B;950;NR2",platform,Woodlands Train Checkpoint,Woodlands Centre Road,yes,,,bus_stop
+"62",n410487073,"410487073",node,"59111",,,,,,,,,,,,,,,,,,,yes,,"171;807;856;858;859;969",platform,Blk 701,Yishun Avenue 5,yes,,,bus_stop
+"63",n410487075,"410487075",node,"59119",,,,,,,,,,,,,,,,,,,yes,,"171;811;811A;811T;856;858;858A;859;859T;883M;969",platform,Opposite Blk 701A,Yishun Avenue 5,yes,,,bus_stop
+"64",n410487078,"410487078",node,"59141",,,,,,,,,,,,,,,,,,,yes,,"171;856;858;859;969",platform,Blk 741,Yishun Avenue 5,yes,,,bus_stop
+"65",n1849689358,"1849689358",node,"46509",,,,,,,,,,,,,,,,Land Transport Authority,,,,,"160;178;856;911;912;912B;950",platform,Marsiling Park,Woodlands Centre Road,yes,,,bus_stop
+"66",n1867272087,"1867272087",node,"47099",,,,,,,,,,,,,,,,,,,,,"856;981",platform,Masterdon,Senoko Drive,yes,,,bus_stop
+"67",n1868431478,"1868431478",node,"47041",,,,,,,,,,,,,,,,,,,,,"856",platform,Opposite Woodlands Auto Hub,Admiralty Road West,yes,,,bus_stop
+"68",n1907922843,"1907922843",node,"58029",,,,,,,,,,,,,,,,Land Transport Authority,,,,,"167;856;858;858A;859;859T;980",platform,The Nautical,Sembawang Road,yes,,,bus_stop
+"69",n1907922927,"1907922927",node,"46088",,,,,,,,,,,,,,Blk 25,,,,,,,"170;178;856;903;911;912;912B;950;NR2",platform,Blk 25,Woodlands Centre Road,yes,,,bus_stop
+"70",n7218072257,"7218072257",node,"47201",,,,,,,,,,,,,,,,,,,,,"856",platform,Woodlands North Station,North Woodlands Drive,yes,,,bus_stop
+"71",n8823767743,"8823767743",node,"59009",,,en:Yishun Bus Interchange,Q8053842,yes,Q3299279,LTA,Land Transport Authority,yes,bus_station,yes,,,,,Land Transport Authority,,yes,yes,yes,"39;85;85A;103;171;800;801;803;804;805;806;807;807A;807B;811;811A;811T;812;812T;851;851e;852;853;853M;854;854e;855;856;857;857A;857B;859;859T;860;860T",station,Yishun Interchange,Yishun Avenue 2,yes,,,bus_stop

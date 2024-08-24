@@ -1,0 +1,105 @@
+fid,full_id,osm_id,osm_type,addr:country,addr:city,maxspeed,tactile_paving,traffic_signals,wheelchair,short_name,lit,amenity,operator,network:wikidata,network:short,network,shelter,bin,bench,name:en,route_ref,ref,public_transport,name,location,bus,button_operated,crossing,traffic_signals:direction,highway
+"1",n410458923,"410458923",node,,,,,,,,,,,,,,,,,,"169","58209",platform,After Pakistan Road,Admiralty Road East,yes,,,,bus_stop
+"2",n410458924,"410458924",node,,,,,,,,,,,,,,,,,,"169;169A","58201",platform,After Queen'S Avenue,Admiralty Road East,yes,,,,bus_stop
+"3",n410458927,"410458927",node,,,,,,,,,,,,,,,,,,"169","58189",platform,Opposite Sembawang Drug Rehabilitationb Centre,Admiralty Road West,yes,,,,bus_stop
+"4",n410458929,"410458929",node,,,,,,,,,,,,,,,,,,"169;856;981","47809",platform,Opposite Sunshine Bakery,Admiralty Road West,yes,,,,bus_stop
+"5",n410458937,"410458937",node,,,,,,,,,,,,,,,,,,"169;169A","47811",platform,Woodlands Sunny Food,Admiralty Road West,yes,,,,bus_stop
+"6",n410458957,"410458957",node,,,,,,,,,,,,,,,,,Sembawang camp,"169;169A;856;981","58141",platform,Sembawang Camp,Admiralty Road West,yes,,,,bus_stop
+"7",n410458976,"410458976",node,,,,,,,,,,,,,,,,,,"169","47829",platform,Sumitomo Bakelite Singapore,Admiralty Road West,yes,,,,bus_stop
+"8",n410458991,"410458991",node,,,,,,,,,,,,,,,,,,"169","47819",platform,Opposite Woodlands Sunny Food,Admiralty Road West,yes,,,,bus_stop
+"9",n410459054,"410459054",node,,,,,,,,,,,,,,,,,,"169;169A;856;981","47801",platform,Sunshine Bakery,Admiralty Road West,yes,,,,bus_stop
+"10",n410459086,"410459086",node,,,,,,,,,,,,,,yes,yes,yes,,"169;856","47079",platform,Opposite British American Tobacco,Admiralty Road West,yes,,,,bus_stop
+"11",n410459130,"410459130",node,,,,,,,,,,,,,,yes,yes,yes,,"169;169A;856","47071",platform,Before British American Tobacco,Admiralty Road West,yes,,,,bus_stop
+"12",n410459198,"410459198",node,,,,,,,,,,,,,,,,,,"169;169A","58181",platform,Sembawang Drug Rehabilitationb Centre,Admiralty Road West,yes,,,,bus_stop
+"13",n410459201,"410459201",node,,,,,,,,,,,,,,,,,,"169","58179",platform,Opposite Sembawang Corporation Industries,Admiralty Road West,yes,,,,bus_stop
+"14",n410459202,"410459202",node,,,,,,,,,,,,,,,,,,"169;169A","58171",platform,Sembawang Corporation Industries,Admiralty Road West,yes,,,,bus_stop
+"15",n410459203,"410459203",node,,,,,,,,,,,,,,,,,,"169;169A","47821",platform,Opposite Sumitomo Bakelite Singapore,Admiralty Road West,yes,,,,bus_stop
+"16",n410459204,"410459204",node,,,,,,,,,,,,,,,,,,"169;856;981","58169",platform,After HomeTeamNS Sembawang Resort,Admiralty Road West,yes,,,,bus_stop
+"17",n410459205,"410459205",node,,,,,,,,,,,,,,,,,,"169;169A;856;981","58161",platform,Before Sembawang Shipyard G 3,Admiralty Road West,yes,,,,bus_stop
+"18",n410459206,"410459206",node,,,,,,,,,,,,,,,,,,"169;856;981","58149",platform,Opposite Sembawang Shipyard G 8,Admiralty Road West,yes,,,,bus_stop
+"19",n410459598,"410459598",node,,,,,,,,,,,,,,,,,,"132;165;166;169;262","56261",platform,After Ang Mo Kio Avenue 2,Ang Mo Kio Avenue 1,yes,,,,bus_stop
+"20",n410459645,"410459645",node,,,,,,,,,,,,,,yes,,,,"132;165;166;169;262","54061",platform,Blk 244,Ang Mo Kio Avenue 1,yes,,,,bus_stop
+"21",n410459647,"410459647",node,,,,,,,,,,,,,,,,,,"132;165;166;169","54069",platform,Opposite Blk 244,Ang Mo Kio Avenue 1,yes,,,,bus_stop
+"22",n410459649,"410459649",node,,,,,,,,,,Land Transport Authority,Q3299279,LTA,Land Transport Authority,,,,,"132;165;166;169","56269",platform,Before Ang Mo Kio Avenue 2,Ang Mo Kio Avenue 1,yes,,,,bus_stop
+"23",n410459707,"410459707",node,,,,,,,,,,,,,,,,,,"1N;76;132;165;166;169;265;268;268C;269;269A;652;CT8","54239",platform,Blk 209,Ang Mo Kio Avenue 3,yes,,,,bus_stop
+"24",n410459711,"410459711",node,,,,,,,,,,,,,,,,,,"76;132;165;166;169;265;268;268A;268B;269;652;CT8","54231",platform,Blk 129,Ang Mo Kio Avenue 3,yes,,,,bus_stop
+"25",n410459716,"410459716",node,,,,,,,,,,,,,,,,,,"71;132;165;166;169;262","54211",platform,Mayflower Secondary School,Ang Mo Kio Avenue 3,yes,,,,bus_stop
+"26",n410459717,"410459717",node,,,,,,,,,,Land Transport Authority,Q3299279,LTA,Land Transport Authority,,,,,"74;76;86;88;130;132;133;136;138;162;162M;165;166;169;265;268;268A;268B;269;853;853M;CT8","54241",platform,Blk 700B,Ang Mo Kio Avenue 3,yes,,,,bus_stop
+"27",n410459725,"410459725",node,,,,,,,,,,,,,,,,,,"1N;76;132;165;166;169;265;268;268C;269;269A;652;CT8","54229",platform,Ang Mo Kio Primary School,Ang Mo Kio Avenue 3,yes,,,,bus_stop
+"28",n410459727,"410459727",node,,,,,,,,,,,,,,yes,,,,"86;138;138A;138B;162;162M;169;853;853M","54247",platform,Blk 322,Ang Mo Kio Avenue 3,yes,,,,bus_stop
+"29",n410459782,"410459782",node,,,,,,,,,,,,,,,,,,"71;132;165;166;169","54219",platform,Opposite Mayflower Secondary School,Ang Mo Kio Avenue 3,yes,,,,bus_stop
+"30",n410459795,"410459795",node,,,,,,,,,,,,,,,,,,"76;132;165;166;169;265;268;268A;268B;269;652;CT8","54221",platform,Opposite Ang Mo Kio Primary School,Ang Mo Kio Avenue 3,yes,,,,bus_stop
+"31",n410460005,"410460005",node,,,,,,,,,bus_station,,,,,yes,,,,"22;24;25;73;73T;86;130;130A;133;135;136;138;138A;138B;166;169;261;262;265;269;269A","54009",platform,Ang Mo Kio Interchange,Ang Mo Kio Avenue 8,yes,,,,bus_stop
+"32",n410473849,"410473849",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"167;169;171;860;980","57069",platform,Opposite Dieppe Barracks,Sembawang Road,yes,,,,bus_stop
+"33",n410473850,"410473850",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"167;169;860;860T;980","57021",platform,Forest Hills Condominium,Sembawang Road,yes,,,,bus_stop
+"34",n410473851,"410473851",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"167;169;860;980","57039",platform,Spiritual Grace Presbyterian Church,Sembawang Road,yes,,,,bus_stop
+"35",n410473853,"410473853",node,,,,,,,,,,Land Transport Authority,,,,,,,,"167;169;860;860T;980","57031",platform,Nee Soon Driclad Centre,Sembawang Road,yes,,,,bus_stop
+"36",n410473855,"410473855",node,,,,,,,,,,Land Transport Authority,,,,yes,,,,"117;117M;169;883;883M","58041",platform,Blk 590C,Sembawang Road,yes,,,,bus_stop
+"37",n410473856,"410473856",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"167;169;171;860;980","57059",platform,Opposite Sembawang Air Base,Sembawang Road,yes,,,,bus_stop
+"38",n410473858,"410473858",node,,,,,,,,,,Land Transport Authority,,,,yes,,,,"167;169;171;860;860T;980","57061",platform,Dieppe Barracks,Sembawang Road,yes,,,,bus_stop
+"39",n410473859,"410473859",node,,,,,,,,,,Land Transport Authority,,,,yes,,,,"167;169;860;860T;980","57041",platform,Nee Soon Headquarters 22 SIB,Sembawang Road,yes,,,,bus_stop
+"40",n410473861,"410473861",node,,,,,,,,,,Land Transport Authority,,,,,,,,"167;169;171;860;860T;980","57051",platform,After Sembawang Air Base,Sembawang Road,yes,,,,bus_stop
+"41",n410473867,"410473867",node,,,,,,,,,,Land Transport Authority,,,,,,,,"167;169;171;860;860T;980","57071",platform,Opposite Khatib Camp,Sembawang Road,yes,,,,bus_stop
+"42",n410473870,"410473870",node,,,,,,,,,,Land Transport Authority,,,,yes,,yes,,"167;169;860;980","57029",platform,After The Springside,Sembawang Road,yes,,,,bus_stop
+"43",n410473884,"410473884",node,,,,,,,,,,Land Transport Authority,,,,,,,,"167;169;171;860;980","57079",platform,Khatib Camp,Sembawang Road,yes,,,,bus_stop
+"44",n410473898,"410473898",node,,,,,,,,,,Land Transport Authority,,,,yes,,,,"167;169;860;980","57049",platform,Opposite Nee Soon Headquarters 22 SIB,Sembawang Road,yes,,,,bus_stop
+"45",n410483164,"410483164",node,,,,,,,Bef SLE,yes,,Land Transport Authority,,,,yes,yes,yes,,"138;138A;167;169;860;860T;980","56081",platform,Before SLE,Upper Thomson Road,yes,,,,bus_stop
+"46",n410483190,"410483190",node,,,,,,,Aft SLE,yes,,Land Transport Authority,,,,yes,yes,yes,,"138;167;169;860;980","56089",platform,After SLE,Upper Thomson Road,yes,,,,bus_stop
+"47",n410483219,"410483219",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"138;167;169;860;980","56079",platform,After Old Upper Thomson Road,Upper Thomson Road,yes,,,,bus_stop
+"48",n410483400,"410483400",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"138;167;169;860;980","56099",platform,Springleaf Station Exit 2,Upper Thomson Road,yes,,,,bus_stop
+"49",n410483428,"410483428",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"138;138A;167;169;860;860T;980","56061",platform,After Tagore Drive,Upper Thomson Road,yes,,,,bus_stop
+"50",n410483448,"410483448",node,,,,,,,,,,Land Transport Authority,,,,yes,,yes,,"138;138A;167;169;860;860T;980","56051",platform,Opposite Tagore Road,Upper Thomson Road,yes,,,,bus_stop
+"51",n410483477,"410483477",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"138;167;169;860;980","57019",platform,Springleaf Nature Park,Upper Thomson Road,yes,,,,bus_stop
+"52",n410483505,"410483505",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"138;167;169;860;980","56059",platform,Before Tagore Road,Upper Thomson Road,yes,,,,bus_stop
+"53",n410483538,"410483538",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"138;138A;167;169;860;860T;980","57011",platform,Opposite Springleaf Nature Park,Upper Thomson Road,yes,,,,bus_stop
+"54",n410483580,"410483580",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"138;167;169;860;980","56069",platform,Before Tagore Drive,Upper Thomson Road,yes,,,,bus_stop
+"55",n410483581,"410483581",node,,,,,,,,,,Land Transport Authority,,,,yes,,yes,,"138;167;169;860;980","56049",platform,Meadows @ Peirce,Upper Thomson Road,yes,,,,bus_stop
+"56",n410483589,"410483589",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"138;138A;167;169;860;860T;980","56091",platform,Springleaf Station Exit 3,Upper Thomson Road,yes,,,,bus_stop
+"57",n410483622,"410483622",node,,,,,,,,,,,,,,yes,yes,yes,,"163;167;169;652;855;980","56021",platform,Opposite Sembawang Hills Food Centre,Upper Thomson Road,yes,,,,bus_stop
+"58",n410483623,"410483623",node,,,,,,,,,,Land Transport Authority,,,,,,,,"138;138A;167;169;860;860T;980","56041",platform,Opposite Meadows @ Peirce,Upper Thomson Road,yes,,,,bus_stop
+"59",n410483625,"410483625",node,,,,,,,,yes,,,,,,yes,yes,yes,,"163;167;169;652;855;980","56029",platform,Before Sembawang Hills Food Centre,Upper Thomson Road,yes,,,,bus_stop
+"60",n410483626,"410483626",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"138;138A;167;169;860;860T;980","56071",platform,Before Old Upper Thomson Road,Upper Thomson Road,yes,,,,bus_stop
+"61",n410483638,"410483638",node,,,,,,,,,,,,,,yes,,,,"163;167;169;652;855;980","56031",platform,Before Yio Chu Kang Road,Upper Thomson Road,yes,,,,bus_stop
+"62",n410484479,"410484479",node,,,,,,,,,,,,,,,,,,"169;169A;169B;903;903M","46271",platform,Opposite Blk 802,Woodlands Avenue 2,yes,,,,bus_stop
+"63",n410484480,"410484480",node,,,,,,,,,,,,,,,,,,"169;903;903M;911;911T;NR2","46279",platform,Blk 803,Woodlands Avenue 2,yes,,,,bus_stop
+"64",n410485114,"410485114",node,,,,,,,,,,,,,,,,,,"169","46719",platform,Givaudan Singapore,Woodlands Avenue 8,yes,,,,bus_stop
+"65",n410485115,"410485115",node,,,,,,,,,,,,,,,,,,"169;169A;169B","46711",platform,Before Admiralty Road West,Woodlands Avenue 8,yes,,,,bus_stop
+"66",n410485118,"410485118",node,,,,,,,,,,,,,,,,,,"169;169A;169B","46721",platform,Before Woodlands Industrial Park E7,Woodlands Avenue 8,yes,,,,bus_stop
+"67",n410485119,"410485119",node,,,,,,,,,,,,,,,,,,"169","46729",platform,After Woodlands Industrial Park E7,Woodlands Avenue 8,yes,,,,bus_stop
+"68",n410485122,"410485122",node,,,,,,,,,,,,,,,,,,"169;911;911T","46261",platform,Blk 808,Woodlands Avenue 9,yes,,,,bus_stop
+"69",n410485123,"410485123",node,,,,,,,,,,,,,,,,,,"169","46459",platform,Blk 872,Woodlands Avenue 9,yes,,,,bus_stop
+"70",n410485124,"410485124",node,,,,,,,,,,,,,,,,,,"169;169A;169B;902","46269",platform,Republic Polytechnic,Woodlands Avenue 9,yes,,,,bus_stop
+"71",n410485125,"410485125",node,,,,,,,,,,,,,,,,,,"169;169A;169B","46451",platform,Opposite Blk 872,Woodlands Avenue 9,yes,,,,bus_stop
+"72",n410485126,"410485126",node,,,,,,,,,,,,,,,,,,"169;858;964","46479",platform,Blk 774,Woodlands Avenue 9,yes,,,,bus_stop
+"73",n410485127,"410485127",node,,,,,,,,,,,,,,yes,,,,"169;169A;169B;858;858A","46461",platform,Opposite Blk 757A Carpark,Woodlands Avenue 9,yes,,,,bus_stop
+"74",n410485128,"410485128",node,,,,,,,,,,,,,,,,,,"169;858;964","46489",platform,After Gambas Avenue,Woodlands Avenue 9,yes,,,,bus_stop
+"75",n410485129,"410485129",node,,,,,,,,,,,,,,yes,,yes,,"169;858","46469",platform,Blk 759,Woodlands Avenue 9,yes,,,,bus_stop
+"76",n410485130,"410485130",node,,,,,,,,,,,,,,,,,,"169;169A;169B;858;858A;964","46481",platform,After Woodlands Industrial Park E6,Woodlands Avenue 9,yes,,,,bus_stop
+"77",n410485131,"410485131",node,,,,,,,,,,,,,,,,,,"169;169A;169B;858;858A;964","46471",platform,Opposite Blk 773,Woodlands Avenue 9,yes,,,,bus_stop
+"78",n410487013,"410487013",node,,,,,,,,,,Land Transport Authority,,,,yes,,yes,,"117;117M;169;858;883;965;969;969A","59061",platform,Blk 763,Yishun Avenue 2,yes,,,,bus_stop
+"79",n410487014,"410487014",node,,,,,,,,yes,,Land Transport Authority,Q3299279,LTA,Land Transport Authority,yes,yes,yes,,"117;117M;169;169A;804;812;812T;858;858A;859;859T;965;965A;965T;969","59073",platform,Opposite Yishun Station,Yishun Avenue 2,yes,,,,bus_stop
+"80",n410487017,"410487017",node,,,,,,,,,,Land Transport Authority,,,,yes,yes,yes,,"39;85;85A;103;117;117M;169;805;811;811T;851;851e;852;854;854e;855;857;857A;857B;858;883;965;965T;969","59069",platform,Opposite Blk 757,Yishun Avenue 2,yes,,,,bus_stop
+"81",n410487019,"410487019",node,,,,,,,,,,Land Transport Authority,,,,yes,,yes,,"117;117M;169;883;883B;883M","59521",platform,Yishun Emerald,Yishun Avenue 2,yes,,,,bus_stop
+"82",n410487020,"410487020",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"117;117M;169;169A;804;812;812T;883;965;965A;965T","59099",platform,Blk 220,Yishun Avenue 2,yes,,,,bus_stop
+"83",n410487021,"410487021",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"117;117M;169;804;811;811T;812;812T;883;883B;883M;965","59091",platform,Blk 154,Yishun Avenue 2,yes,,,,bus_stop
+"84",n410487025,"410487025",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"117;117M;169;800;811;811T;883;883B;883M;965","59251",platform,Opposite Darul Makmur Mosque,Yishun Avenue 2,yes,,,,bus_stop
+"85",n410487057,"410487057",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"169;860","59549",platform,Khatib Camp,Yishun Avenue 3,yes,,,,bus_stop
+"86",n410487058,"410487058",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"169;811;811T;812;812T;860","59339",platform,Blk 776,Yishun Avenue 3,yes,,,,bus_stop
+"87",n410487059,"410487059",node,,,,,,,,,,Land Transport Authority,,,,yes,yes,yes,,"169;811;811T;860;860T","59331",platform,Blk 773,Yishun Avenue 3,yes,,,,bus_stop
+"88",n410487060,"410487060",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"169;860;860T","59541",platform,Opposite Khatib Camp,Yishun Avenue 3,yes,,,,bus_stop
+"89",n410487061,"410487061",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"169;860;860T","59551",platform,Blk 722,Yishun Avenue 3,yes,,,,bus_stop
+"90",n410487062,"410487062",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"169;860","59559",platform,Opposite Blk 722,Yishun Avenue 3,yes,,,,bus_stop
+"91",n617988784,"617988784",node,,,,,,,,yes,,,,,,yes,yes,yes,,"169;169A;882","58069",platform,Opposite Durban Road,Sembawang Road,yes,,,,bus_stop
+"92",n617988791,"617988791",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"117;117M;169;882;883;883M","58051",platform,Blk 592C,Sembawang Road,yes,,,,bus_stop
+"93",n617988792,"617988792",node,,,,,,,,yes,,Land Transport Authority,,,,yes,yes,yes,,"117;117M;169;169A;882;883;883B;883M","58059",platform,Opposite Blk 592C,Sembawang Road,yes,,,,bus_stop
+"94",n617988793,"617988793",node,,,,,,,,yes,,,,,,yes,yes,yes,,"169;882","58061",platform,After Durban Road,Sembawang Road,yes,,,,bus_stop
+"95",n1857011343,"1857011343",node,,,,,,no,,,,,,,,,,,,"163;167;169;652;855;980","56039",platform,After Yio Chu Kang Road,Upper Thomson Road,yes,,,,bus_stop
+"96",n1863993047,"1863993047",node,,,,,,,,,,,,,,,,,,"169;169A","58191",platform,After Wellington Road,Admiralty Road East,yes,,,,bus_stop
+"97",n1863993049,"1863993049",node,,,,,,,,yes,,,,,,yes,yes,yes,,"163;167;169;855;980","56019",platform,Before Ang Mo Kio Avenue 1,Upper Thomson Road,yes,,,,bus_stop
+"98",n1863993053,"1863993053",node,,,,,,,,,,Land Transport Authority,,,,yes,,,,"117;117M;169;169A;883;883B;883M","58049",platform,Opposite Blk 590C,Sembawang Road,yes,,,,bus_stop
+"99",n1863993062,"1863993062",node,,,,,,,,,,Land Transport Authority,,,,,,,,"169","58199",platform,Opposite Auckland Road West,Admiralty Road East,yes,,,,bus_stop
+"100",n3747814385,"3747814385",node,,,,,,,,,,Land Transport Authority,Q3299279,LTA,Land Transport Authority,yes,yes,yes,,"117;117M;169;858;883;883B;965;969;969A","59079",platform,Yishun Station,Yishun Avenue 2,yes,,,,bus_stop
+"101",n6923883536,"6923883536",node,,,,,,,,,,Land Transport Authority,,,,yes,yes,yes,,"117;117M;169;169A;883;883M","59529",platform,Opposite Yishun Emerald,Yishun Avenue 2,yes,,,,bus_stop
+"102",n7127055543,"7127055543",node,,,,,,,,,,Land Transport Authority,,,,yes,,yes,,"117;117M;169;883;883B;883M","58549",platform,Canberra Station,Canberra Link,yes,,,,bus_stop
+"103",n7128552710,"7128552710",node,,,,,,,,,,,,,,,,,,,,stop_position,Before Adana @ Thomson,,yes,,,,
+"104",n7128552711,"7128552711",node,,,,,,,,,,Land Transport Authority,Q3299279,LTA,Land Transport Authority,yes,,yes,,"163;167;169;855;980","56011",platform,Before Adana @ Thomson,Upper Thomson Road,yes,,,,bus_stop
